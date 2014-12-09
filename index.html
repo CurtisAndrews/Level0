@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META DATA -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="MSSmartTagsPreventParsing" content="true" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+        <!-- SEO -->
+        <title></title>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="robots" content="index,follow,archive" />
+
+        <!-- ICONS -->
+        <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+        <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+        <!-- STYLESHEETS 
+        <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />-->
+
+        <script>
+
+        /* Part 1 */
+		var rectangle1 = {
+			x: 7,
+			y: 10, 
+			width: 35;
+			height: 50;
+
+		}
+		var rectangle2 = {
+			x: 15,
+			y: 45,
+			width: 150;
+			height: 10;
+		}
+		var sizeCheck = function(rectangle1, rectangle2) {
+			if (rectangle1.x < rectangle2.x && 
+				rectangle1.y < rectangle2.y && 
+				rectangle2.width + rectangle2.x < rectangle1.width + rectangle1.x && 
+				rectangle2.width + rectangle2.y < rectangle1.width + rectangle1.y) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		sizecheck(rectangle1, rectangle2);
+
+		/* part 2 */
+		var names = ["Tristan", "Monica", "Ysolde", "Billy", "Thomas"];
+		var hello = function(myString){
+			return "Hello, " + myString + "!";
+		}
+		var map = function(names, hello) {
+			var newArray = [names, hello];
+		}
+        </script>
+    </head>
+<body>
+	Test
+</body>
+</html>
